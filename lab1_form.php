@@ -15,6 +15,8 @@
     }
     ?>
     <form action="" method="post">
+        <fieldset>
+            <legend>Login</legend>
         <div>
             <label for="">Username</label>
             <input type="text" name="username">
@@ -25,8 +27,35 @@
         </div>
         <input type="color" name="choose color" id="">
         <input type="date" name="date" id="">
-        <input type="Submit" value="Login" name="submit">
+        <input type="Submit" value="Login" name="submit">  
+
+        <div>
+            <select name="country">
+                <option value="nepal">Nepal</option>
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+
+            </select>
+            <input type="Submit">
+        </div>
+
+        <div>
+        <input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<input type="Submit">
+        </div>
+        
+        </fieldset>
     </form>
+
 </body>
 
 </html>
+
